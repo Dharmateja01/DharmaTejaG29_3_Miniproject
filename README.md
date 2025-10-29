@@ -1,16 +1,26 @@
-# React + Vite
+Mini E-commerce Shopping Cart Simulation
+A basic React application demonstrating core front-end architectural patterns, focusing on global state management for a shopping cart using the Context API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+-Product Listing: Displays a list of mock products (name, price, image).
 
-Currently, two official plugins are available:
+-Dynamic Cart Management: Users can add or increment items directly from the product page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Real-time Total: The cart count in the header and the total price on the cart page update instantly.
 
-## React Compiler
+-Quantity Control: The Cart Page allows users to update item quantities or remove items entirely.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-Responsive UI: Styled with Tailwind CSS for a clean, modern, and mobile-friendly interface.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-Core Concepts Mastered
+-This project is built specifically to demonstrate a strong command of the following essential React concepts:
+
+
+| Concept | Description |
+| :--- | :--- |
+| **React Context API** | Used to create a global, centralized store for the cart state, ensuring a single source of truth for the entire application. |
+| **Props Drilling Elimination** | Achieved by using the custom **`useCart()`** hook, allowing deep components to access global data without passing props down. |
+| **Component Composition** | The UI is structured logically using reusable, focused components (`ProductCard`, `CartItem`). |
+| **State Management** | Effective use of **`useState`** for mutable data and **`useMemo`** for optimized dynamic calculations (like the order total). |
+| **Routing** | Utilizes **React Router DOM** for smooth, client-side navigation. |
